@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS basic</title>
+    <link rel="icon" type="image/png" href="user (4).png" />
+    <style>
+      .name {
+        color: darkblue;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .last_name {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        font-weight: bold;
+      }
+      #heading {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color: black;
+        padding: 10px;
+      }
+      .title_text {
+        color: darkblue;
+        font-weight: bold;
+      }
+      .heading_color {
+        background-color: rgb(173, 173, 173);
+        padding: 8px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: darkblue;
+      }
+      ul li a:hover {
+        color: darkred;
+      }
+      ul li a:active {
+        color: black;
+      }
+      #about {
+        background-color: rgb(43, 43, 43);
+        color: white;
+        padding: 15px;
+      }
+      .color_text {
+        color: rgb(0, 184, 239);
+      }
+      #button1 {
+        background-color: grey;
+        height: 30px;
+        width: 80px;
+        border-radius: 10px;
+        border: 1px solid white;
+      }
+      table, tr, td, th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      table{
+        width: 60%;
+      }
+      th{
+        background-color: rgb(43, 43, 43);
+        color: white;
+      }
+      tr:nth-child(even){
+        background-color: rgb(109, 109, 109);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="heading">Basic HTML and CSS</p>
+    <p class="last_name"><span class="name">Archan</span> Chovatiya</p>
+    <img src="./user (4).png" height="50" width="50" alt="user" />
+    <div>
+      <h3 class="heading_color">Personal Information</h3>
+      <blockquote>
+        <span class="title_text">Name </span>: Archan Chovatiya<br />
+        <span class="title_text">Address </span> : Waterloo, Ontario, CA<br />
+        <span class="title_text">Postal Code </span> : N2J 4N3 <br />
+        <span class="title_text">Phone Number </span> : +1(519)573-5735 <br />
+        <span class="title_text">Email </span> : archanchovatiya@gmail.com
+        <br />
+      </blockquote>
+      <h3 class="heading_color">Check my work here</h3>
+      <ul>
+        <li>
+          <a href="./firstdaycss.html" target="_blank"
+            ><span title="Cascading Style Sheet">CSS</span> for first day</a
+          >
+        </li>
+      </ul>
+    </div>
+    <br />
+    <div id="about">
+      <h2 style="font-size: 26px; text-decoration: bold">About Me</h2>
+      <p>
+        I am <span class="color_text">Archan Chovatiya</span> fron Rajkot,
+        India. I live in Waterloo and pursuing post graduation in
+        <span class="color_text"
+          >Web Development and Internet Application Fundamentals</span
+        >
+        course in Conestoga college. I am member of
+        <span class="color_text"
+          ><abbr
+            title="Conestoga Condors"
+            style="text-decoration: none"
+            >CC</abbr
+          ></span
+        >. I have compelted my
+        <span class="color_text"
+          ><abbr title="Bachelor's of Engineering" style="text-decoration: none"
+            >B.E.</abbr
+          ></span
+        >
+        in Computer Engineering from
+        <abbr title="Vyavsayi Vidhya Pratishthan" style="text-decoration: none"
+          >V.V.P.</abbr
+        >
+        Engineering College, Rajkot. <br /><br />
+        <button
+          id="button1"
+          onclick="document.location='https://www.google.com'"
+        >
+          Click Here
+        </button>
+      </p>
+    </div>
+    <h2>Let's learn some basic things in HTML</h2>
+    <ul>
+      <li><a href="#1">Different types of list</a></li>
+      <ol>
+        <li>Ordered List</li>
+        <li>Unordered List</li>
+      </ol>
+      <li><a href="#2">Headings</a></li>
+      <li><a href="#3">Anchor Tag</a></li>
+      <li><a href="#4">Tables</a></li>
+      <li><a href="#5">Forms</a></li>
+    </ul>
+    <div class="heading_color">
+      <h2 id="1" style="background-color: rgb(43, 43, 43); color: white; padding: 15px">
+        List
+      </h2>
+      <blockquote>
+        <h3>Example of Ordered List</h3>
+        <ol>
+          <p>Recipe to make cake</p>
+          <li>
+            Preheat your oven to 350°F (175°C). Grease and flour two 9-inch
+            round cake pans, or line the bottoms with parchment paper.
+          </li>
+          <li>
+            In a medium bowl, whisk together the flour, baking powder, and salt.
+            Set aside.
+          </li>
+          <li>
+            In a large mixing bowl, cream the softened butter and granulated
+            sugar together until light and fluffy. This usually takes about 3-4
+            minutes.
+          </li>
+          <li>
+            Add the eggs, one at a time, beating well after each addition. Make
+            sure to scrape down the sides of the bowl to ensure even mixing.
+          </li>
+          <li>Stir in the vanilla extract.</li>
+          <li>
+            Gradually add the dry flour mixture and the milk to the batter,
+            starting and ending with the dry ingredients. Mix until just
+            combined. Be careful not to overmix.
+          </li>
+          <li>
+            Divide the batter evenly between the prepared cake pans and smooth
+            the tops with a spatula.
+          </li>
+          <li>
+            Bake in the preheated oven for about 25-30 minutes, or until a
+            toothpick inserted into the center of the cakes comes out clean.
+          </li>
+          <li>
+            Once baked, remove the cakes from the oven and let them cool in the
+            pans for about 10 minutes. Then, turn them out onto a wire rack to
+            cool completely before frosting.
+          </li>
+        </ol>
+      </blockquote>
+      <blockquote>
+        <h3>Example of Unordered List</h3>
+        <ul>
+          <p>Ingredients :</p>
+          <li>2 ½ cups all-purpose flour</li>
+          <li>2 ½ teaspoons baking powder</li>
+          <li>½ teaspoon salt</li>
+          <li>1 ¼ cups unsalted butter, softened</li>
+          <li>2 cups granulated sugar</li>
+          <li>4 large eggs</li>
+          <li>1 teaspoon vanilla extract</li>
+          <li>1 cup whole milk</li>
+        </ul>
+        <h3>Nested List</h3>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>
+            3
+            <ol type="a">
+              <li>3.1</li>
+              <li>3.2</li>
+            </ol>
+          </li>
+          <li>4</li>
+        </ul>
+      </blockquote>
+    </div>
+    <br>
+    <div class="heading_color">
+      <h2 id="2" style="background-color: rgb(43, 43, 43); color: white; padding: 15px">Heading</h2>
+      <blockquote>
+        <p>There are 6 levels of headings in HTML, from &lt;h1&gt; to &lt;h6&gt;.</p>
+        <ul>
+          <li>&lt;h1&gt; : Default font size is <b>32px (2em)</b></li>
+          <li>&lt;h2&gt; : Default font size is <b>24px (1.5em)</b></li>            
+          <li>&lt;h3&gt; : Default font size is <b>20.8px (1.3em)</b></li>            
+          <li>&lt;h4&gt; : Default font size is <b>16px (1em)</b></li>
+          <li>&lt;h5&gt; : Default font size is <b>12.8px (0.8em)</b></li>
+          <li>&lt;h6&gt; : Default font size is <b>11.2px (0.7em)</b></li>
+        </ul>
+          <p><span style="font-size: 32px;">Heading 1</span></p>
+          <p><span style="font-size: 24px;">Heading 2</span></p>
+          <p><span style="font-size: 20.8px;">Heading 3</span></p>
+          <p><span style="font-size: 16px;">Heading 4</span></p>
+          <p><span style="font-size: 12.8px;">Heading 5</span></p>
+          <p><span style="font-size: 11.2px;">Heading 6</span></p>
+      </blockquote>
+    </div>
+    <br>
+    <div class="heading_color">
+    <h2 id="3" style="background-color: rgb(43, 43, 43); color: white; padding: 15px">Anchor Tag</h2>
+    <blockquote>
+      <p>In HTML, the anchor tag <a> is used to create hyperlinks, allowing you to link to other web pages, files, or resources. Here's the basic syntax of the anchor tag:</p>
+        <pre><code>&lt;a href="https://www.googole.com"&gt;Google&lt;/a&gt;</code></pre>
+        <p>Here I have used &lt;pre&gt; and &nbsp;&lt;code&gt; to write above link in html file.</p>  
+        <ul>
+          <li><p>&lt;pre&gt; : The &lt;pre&gt; (short for "preformatted text") element is used to display text exactly as it appears in the HTML code, preserving whitespace and line breaks. It is often used for displaying code snippets, ASCII art, or any text that requires precise formatting.</p></li>
+          <li>&lt;code&gt; : The &lt;code&gt; element is used to define a piece of computer code within the text. It typically renders text in a monospaced font and is often used within &lt;pre&gt; elements or inline within a sentence or paragraph to highlight code.</li>
+        </ul>
+    </blockquote>
+  </div>
+  <br>
+  <div class="heading_color">
+    <h2 id="4" style="background-color: rgb(43, 43, 43); color: white; padding: 15px">Tables</h2>
+    <blockquote>
+      <p>Basic table example</p>
+      <table>
+        <tr>
+          <th style="width: 10%;">Sr. No.</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Akshar Patel</td>
+          <td>24</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Archan Chovatiya</td>
+          <td>24</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Yash Patel</td>
+          <td>24</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Akshar Patel</td>
+          <td>24</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Archan Chovatiya</td>
+          <td>24</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Yash Patel</td>
+          <td>24</td>
+          <td>Male</td>
+        </tr>
+      </table>
+    </blockquote>
+    <blockquote>
+      <p>Rowspan and Colspan in tables</p>
+      <table>
+        <tr>
+          <th style="width: 10%;">Sr. No.</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+        </tr>
+        <tr>
+          <td rowspan="2">1</td>
+          <td>Akshar Patel</td>
+          <td rowspan="2">24</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>Archan Chovatiya</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Yash Patel</td>
+          <td>24</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Akshar Patel</td>
+          <td>24</td>
+          <td>Male</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Archan Chovatiya</td>
+          <td colspan="2">24</td>
+          <!-- <td>Male</td> -->
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Yash Patel</td>
+          <td>24</td>
+          <td>Male</td>
+        </tr>
+      </table>
+    </blockquote>
+  </div>
+  <br>
+  <div >
+    <h2 id="5" style="background-color: rgb(43, 43, 43); color: white; padding: 15px">HTML forms</h2>
+    <blockquote>
+      <form action="">
+        <h1>Payment Form</h1>
+        <h2>Contact Information</h2>
+        <p>Name : <input type="text" name="name" required></p>
+        <fieldset>
+        <legend>Gender</legend>
+            <p> 
+                Male <input type="radio" name="gender" id="male">
+                Female <input type="radio" name="gender" id="female">
+            </p>
+        </fieldset>
+        <p>Adderss :<textarea name="address" id="address" cols="30" rows="3"></textarea></p>
+        <p>Email : <input type="email" name="email" id="email" required></p>
+        <p>Pincode : <input type="number" name="pincode" id="pincode" required></p>
+        <h2>Payment Information</h2>
+        <p>Card Type :
+            <select name="card_type" id="card_type" required>
+                <option value=>--Select a Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </p>
+        <p>
+            Card Number <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Expiration Date <input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <p>
+            CVV <input type="password" name="cvv" id="cvv" required>
+        </p>
+        <input type="submit" value="Pay Now"> &nbsp; &nbsp;
+        <input type="reset" value="Reset Form">
+    </form>
+    </blockquote>
+  </div>
+  </body>
+</html>
